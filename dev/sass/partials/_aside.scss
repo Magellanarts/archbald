@@ -1,0 +1,141 @@
+.ba-aside {
+	width: 32%;
+	border-left: 50px solid transparent;
+
+	.ba-aside-inner {
+		@include white-transparent-container;
+
+		.ba-aside-module {
+			position: relative;
+			background: #fff;
+			padding: 20px;
+			text-align: left;
+			margin-bottom: 10px;
+
+			font-size: 14px;
+			line-height: 20px;
+
+			.ba-aside-module-heading {
+				font: 700 16px/16px $siteFont;
+				text-transform: uppercase;
+				margin-bottom: 10px;
+			}
+
+			.ba-aside-module-learn-more-link {
+				@include read-more-link;
+				color: $primaryBlue;
+			}
+
+
+			&.borough-info {
+				padding: 0;
+				
+				font-size: 14px;
+				line-height: 20px;
+
+				.borough-info-container {
+					padding: 165px 2px 25px;	
+
+					.ba-borough-info-map-link {
+						display: block;
+						margin-top: -160px;
+
+						.ba-borough-info-map {
+							width: 100%;
+						}	
+					}
+					
+					.ba-office-contact-info {
+						padding-top: 20px;
+
+						> .ba-container {
+							@include inline-block;
+							font-size: 13px;
+
+
+							&.ba-office-contact-info-office-hours {
+								border-right: 1px solid $lightGrey;
+								width: 38%;
+								@include box-sizing(border-box);
+								margin-right: 20px;
+
+								@media #{$bb} { 
+									margin-right: 0;
+								}
+							}
+
+							&.ba-office-contact-info-email {
+								width: 50%;
+
+								a {
+									color: $primaryBlue;
+									text-decoration: none;
+									word-wrap: break-word;
+								}
+							}
+
+							h5 {
+								color: $lightGrey;
+								font: 700 12px/16px $siteFont;
+								text-transform: uppercase;
+							}
+
+							@media screen and (max-width : 1635px) { 
+								width: 100%;
+								padding-bottom: 8px;
+
+								&.ba-office-contact-info-office-hours,
+								&.ba-office-contact-info-email  { 
+									border-right: none;
+									width: 100%;
+								}
+								
+				
+							}
+						}
+					}
+
+				}
+
+
+			}
+
+		}
+	}
+
+	.ba-weather {
+		@include display-table;
+
+		.ba-weather-thermometer {
+			position: absolute;
+			top: -3px;
+			right: 0;
+			@include retina('icon-temperature', 26px,23px, 'icons/');
+		}
+
+		.ba-weather-temperature {
+			font: 24px $siteFont;
+			border-right: 1px solid #d8dbde;
+			margin-right: 10px;
+
+			span,
+			img {
+				vertical-align: middle;
+				white-space: nowrap;
+			}
+		}
+
+		.ba-weather-forecast {
+			padding-left: 10px;
+			.ba-weather-forecast-link {
+				font-size: 14px;
+				line-height: 20px;
+				text-decoration: none;
+				color: $primaryBlue;
+			}
+
+		}
+	
+		
+	}
+}

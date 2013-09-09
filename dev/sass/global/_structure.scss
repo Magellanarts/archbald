@@ -1,0 +1,89 @@
+.ba-site-container {
+	line-height: 0;
+	font-size: 0;
+	padding-left: 285px;
+
+	> .ba-container {
+		//@include inline-block(top);
+
+		&.ba-site-sidebar {
+			color: #fff;
+			width: 20%;
+			min-width: 285px;
+			background: #276ebe;
+			padding: 29px 0;
+			height: 100%;
+			@include box-sizing(border-box);
+			
+			@media #{$iPad} { 
+				left: -100%
+			}
+		}
+
+		&.ba-site-content {
+			background-repeat:  no-repeat;
+			background-position: left top;
+			background-size: 100% auto;
+			@include box-sizing(border-box);
+			width: 100%;
+
+			.ba-content {
+				padding: 272px 4% 0;
+				@include display-table(top, true);
+
+				.ba-main-content {
+					@include white-transparent-container;
+					width: 64%;
+					margin-right: 3%;
+				}
+
+				@media #{$bb} { 
+					padding: 0;
+
+					.ba-main-content {
+						width: 100%;
+						display: block;
+						@include box-sizing(border-box);
+						margin-right: 0;
+
+						.ba-home-post-list {
+							width: 100%;
+
+							.ba-page-content {
+								width: 100%;
+								display: block;
+								padding: 0 0 30px 0;
+								border-right: none;
+
+							}
+
+							.ba-page-content-aside {
+								width: 100%;
+								display: block;
+								padding-left: 0;
+							}
+						}
+					}
+
+					.ba-aside {
+						display: block;
+						width: 100%;
+						border-left: none;
+
+					}
+				}
+			}
+
+			@media #{$iPad} { 
+				width: 100%;
+			}
+
+			
+
+		}
+	}
+
+	@media #{$iPad} { 
+		padding-left: 0;
+	}
+}

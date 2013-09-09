@@ -1,0 +1,99 @@
+body {
+	font: 14px/22px $siteFont;
+	color: $darkBlue;
+	background: #f2f2f2;
+}
+
+.ba-clear {
+	@include clear-content;
+}
+
+.ba-page-content {
+	font-size: 14px;
+	line-height: 22px;
+
+	h1 {
+		margin-bottom: 10px;
+	}
+
+	h2 {
+		font: 700 16px/24px $siteFont; 
+		color: $darkBlue;
+		text-transform: uppercase;
+	}
+
+	h3 {
+		font: 700 12px/24px $siteFont;
+		color: $lightGrey;
+		text-transform: uppercase;
+	}
+
+	.ba-post-content {
+		margin-bottom: 15px;
+	}
+	
+	ul {
+		margin-left: 25px;
+		li {
+			list-style: disc outside;
+			padding-bottom: 5px;
+		}
+	}
+	
+	
+	.ba-accordion-list {
+		margin-left: 0;
+		> li {
+			list-style: none;
+			margin-bottom: 15px;	
+
+			.ba-accordion-list-question {
+				font-weight: 600;
+				cursor: pointer;
+			}
+
+			.ba-accordion-list-answer {
+				display: none;
+			}
+		}	
+	}	
+
+
+	.ba-sub-section {
+		margin-bottom: 15px;
+
+		.ba-sub-section-heading {
+			font-size: 16px;
+			line-height: 24px;
+			color: $darkBlue;
+			margin-bottom: 5px;
+		}
+
+		.ba-sub-section-member-list {
+			margin-left: 0;
+
+			> li {
+				list-style: none;
+				margin-bottom: 5px;
+				.ba-sub-section-member-title {
+					font-size: 12px;
+					font-weight: 600;
+					color: #b4b7bb;
+					text-transform: uppercase;
+				}
+
+				> .ba-sub-section-member-detail {
+					border-left: 1px solid #818890;
+					margin-left: 10px;
+					padding-left: 10px;
+
+					&:first-of-type {
+						border-left: none;
+						margin-left: 0;
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+}

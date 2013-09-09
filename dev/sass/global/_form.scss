@@ -1,0 +1,24 @@
+input {
+	@include border-radius(5px);
+	border: 1px solid #e6e6e6;
+	padding: 0 40px 0 10px;
+	height: 41px;
+	line-height: 32px;
+	width: 100%;
+	@include box-sizing(border-box);
+}
+
+[type="submit"] {
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: none;
+	background-color: #26be3f;
+	height: 37px;
+	width: 37px;
+	text-indent: -9999px;
+	cursor: pointer;
+	@include border-radius(5px);
+	position: absolute;
+	right: 2px;
+	top: 2px;
+}

@@ -1,0 +1,88 @@
+.ba-post-navigation {
+	@include display-table;
+	border-top: 1px solid #dfe2e4;
+
+	.ba-post-navigation-link {
+		width: 50%;
+		text-align: center;
+		text-decoration: none;
+		height: 88px;
+		color: $darkBlue;
+
+		&:hover {
+			background: #f5f5f5;
+
+			.ba-post-navigation-link-title {
+				color: $primaryBlue;
+			}
+		}
+
+		&:first-child {
+			border-right: 1px solid #dfe2e4;
+		}
+
+		.ba-post-navigation-link-time {
+			text-transform: uppercase;
+			font: 700 16px/19px $siteFont;
+		}
+
+		.ba-post-navigation-link-title {
+			font: 14px/21px $siteFont;
+		}
+	}
+}
+
+.ba-single-content {
+	@include display-table(top);
+
+	&.ba-gallery {
+		padding-right: 25px !important;
+	}
+
+	> .ba-page-content {
+		width: 73%;
+		padding-right: 20px;
+		border-right: 1px solid #dfe2e4;
+	}
+
+	> .ba-page-content-aside {
+		padding-left: 25px;
+
+		> h4 {
+			text-transform: uppercase;
+			font-size: 12px;
+			font-weight: 700;
+			margin-bottom: 16px;
+		}
+
+		.ba-post-type-link {
+			@include inline-block;
+			text-decoration: none;
+			color: $primaryBlue;
+			font: 12px/14px $siteFont;
+			position: relative;
+			padding-left: 40px;
+			margin-bottom: 5px;
+			height: 25px;
+
+			&:before {
+				@include icon;
+				color: $darkBlue;
+				position: absolute;
+				left: 0;
+			}
+
+			&.icon_news {
+				&:before {
+					top: 5px;
+				}
+			}
+
+			&.icon_gallery {
+				&:before {
+					top: 5px;
+				}
+			}
+		}
+	}
+}

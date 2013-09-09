@@ -1,0 +1,11 @@
+# Only Need Dev Folder #
+###################
+.DS_Store
+.idea/*
+.sass-cache/*
+Gruntfile.js
+Gruntfile.old.js
+node_modules/*
+package.json
+target/*
+wordpress/*

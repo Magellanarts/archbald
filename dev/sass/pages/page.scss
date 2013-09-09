@@ -1,0 +1,27 @@
+.page-subsection-list {
+	li {
+		padding-bottom: 8px;
+		margin-bottom: 8px;
+		border-bottom: 1px solid #e5e5e5;
+		a {
+			font-size: 12px;
+			line-height: 14px;
+			color: #276ebe;
+			text-decoration: none;
+
+			&:hover {
+				color: #364251;
+				padding-left: 10px;
+			}
+		}
+	}
+}
+
+.ba-page-gallery-wrap {
+	
+	//overflow: hidden;
+
+	.ba-page-gallery {
+
+	}
+}
